@@ -1,0 +1,17 @@
+<div *ngIf="!producto">
+  <p>cargando producto</p>
+</div>
+
+<div *ngIf="producto">
+
+<div class="col-lg-4">
+   <img src="http://localhost/php/api-rest-backend/uploads/{{producto.imagen}}"class="estilo_imagen"/>
+</div>
+
+  <div class="col-lg-8" class="detalle">
+    <h3>{{producto.nombre}}</h3>
+    <p> <strong>{{producto.description}}</strong> </p> <br><br>
+    <p class="precio">{{producto.precio}} u$d</p>
+  </div>
+
+</div>

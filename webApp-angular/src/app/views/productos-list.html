@@ -1,0 +1,36 @@
+<h3>{{titulo}}</h3>
+<hr>
+
+<div *ngIf="!productos">
+   Cargando listado de productos...
+</div>
+<div *ngIf="productos">
+   <div class="row">
+     <div  *ngFor="let producto of productos" class="col-lg-4">
+       <div class="thumbnail">
+         <div *ngIf="producto.imagen" class="contenedor-imagen">
+           <img src="http://localhost/php/api-rest-backend/uploads/{{producto.imagen}}"class="estilo_imagen"/>
+         </div>
+         <div *ngIf="!producto.imagen">
+           <div class="img-relleno"></div>
+         </div>
+         <div class="caption">
+           <h3 style="text-align:center">{{producto.nombre}}</h3>
+            <p>{{producto.precio}}u$d</p>
+
+            <div class="padre" *ngIf="confirmado != producto.id">
+              <a [routerLink]="['/producto',producto.id]" class="btn btn-default">Ver</a>
+              <a [routerLink]="['/editar-producto',producto.id]"class="btn btn-default">Editar</a>
+              <a (click)="borrarConfirm(producto.id)" class="btn btn-default">Borrar</a>
+            </div>
+
+            <div class="padre" *ngIf="confirmado == producto.id">
+              <p>Estas seguro de querer borrar este producto?</p>
+                <a (click)="onDeleteProducto(producto.id)" class="btn btn-danger" >Eliminar</a>
+                <a (click)="cancelarConfirm()" class="btn btn-warning" >Cancelar</a>
+            </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>

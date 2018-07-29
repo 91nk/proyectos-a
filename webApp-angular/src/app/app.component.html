@@ -1,0 +1,22 @@
+<div id="content" class="col-lg-10 col-lg-offset-1">
+  <header id="header">
+    <h1>
+      {{title}}
+    </h1>
+  </header>
+  <nav id="nav" class="col-lg-12">
+    <ul>
+      <li><a [routerLink]="['/home']" [routerLinkActive]="['activado']" >Home</a></li>
+      <li><a [routerLink]="['/productos']" [routerLinkActive]="['activado']" >Productos</a></li>
+      <li><a [routerLink]="['/crear-producto']" [routerLinkActive]="['activado']">Crear Producto</a></li>
+    </ul>
+  </nav>
+  <section id="main" class="col-lg-12">
+    <router-outlet></router-outlet>
+    <!--4.por ultimo cambio la etiqueta <home></home> por <router-outlet> -->
+  </section>
+
+  <footer id="footer"class="col-lg-12">
+    <p>Curso Angular-5 <a href="https://github.com/91nk">Santiago Spinetto Jung</a></p>
+  </footer>
+</div>

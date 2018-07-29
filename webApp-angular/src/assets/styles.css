@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+#content{
+  margin-top: 30px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 5px #ccc;
+  padding: 0px;
+  overflow: hidden;
+}
+#header{
+  background: #e03137c2;
+  color: white;
+  padding: 5px;
+  margin: 0px;
+  height: 90px;
+  line-height:90px;
+}
+#header h1{
+  display: block;
+  line-height:50px;
+  font-family: 'Audiowide';
+  text-align: center;
+}
+
+#nav{
+  padding: 0px;
+  margin: 0px;
+  background: #d9f7e9;
+}
+
+#nav ul{
+  list-style: none;
+  margin: 0px;
+
+}
+
+#nav ul li{
+  float: left;
+
+}
+
+#nav ul li a{
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#nav ul li a:hover{
+  text-decoration: none;
+  background-color: #e03137c2;
+  transition: 400ms;
+  color: white;
+}
+
+.activado{
+  text-decoration: none !important;
+  background-color: #e03137c2 !important;
+  border-bottom: 4px solid grey !important;
+  color: white !important;
+}
+
+#footer{
+  margin-top: 50px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+#main .jumbotron {
+  padding: 50px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+#main .jumbotron h2, p, a {
+  text-align: center;
+}
+
+#form-producto label{
+  margin-top: 10px;
+}
+
+.estilo_imagen{
+  height: 200px;
+  margin: 0px auto;
+  max-width: 100%;
+  display: block;
+}
+.img-relleno{
+  background-color: #ccc;
+  width: 100%;
+  height: 200px;
+}
+
+.contenedor-imagen{
+  width: 100%;
+  overflow: hidden;
+}
+.detalle{
+  margin-top: 50px;
+}
+
+.detalle p {
+  float: left;
+  margin: 10px;
+}
+
+.padre {
+  text-align: center;
+}
+.hijo{
+   display: inline-block;
+}
