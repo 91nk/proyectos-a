@@ -1,3 +1,3 @@
 # Proyecto para gestion de productos<br/>
-*Front: AngularCLI
-*backend: Slim-PHP
+*Front: AngularCLI<br/>
+*Backend: Slim-PHP
