@@ -1,3 +1,3 @@
-Proyecto para gestion de productos:(Curso AngularCLI Udemy - Prof: Victor Robles)
+Proyecto para gestion de productos
 *Front: AngularCLI
 *backend: Slim-PHP
